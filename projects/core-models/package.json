@@ -1,9 +1,9 @@
 {
-  "name": "core-models",
+  "name": "core-models-ng-maur025",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": "^15.1.2",
+    "@angular/core": "^15.1.2"
   },
   "dependencies": {
     "tslib": "^2.3.0"

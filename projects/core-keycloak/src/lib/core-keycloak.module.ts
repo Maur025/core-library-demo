@@ -1,16 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CoreKeycloakComponent } from './core-keycloak.component';
-
-
+import { APP_INITIALIZER, NgModule } from '@angular/core'
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular'
+import { initializer } from './initializer/keycloak-initializer'
+import { KeycloakAuthService } from './services/keycloak-auth.service'
+import { HandleKeycloakAuthGuard } from '../public-api'
 
 @NgModule({
-  declarations: [
-    CoreKeycloakComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    CoreKeycloakComponent
-  ]
+	declarations: [],
+	imports: [KeycloakAngularModule],
+	providers: [
+		{
+			provide: APP_INITIALIZER,
+			useFactory: initializer,
+			multi: true,
+			deps: [KeycloakService],
+		},
+		KeycloakAuthService,
+		HandleKeycloakAuthGuard,
+	],
+	exports: [],
 })
-export class CoreKeycloakModule { }
+export class CoreKeycloakModule {}

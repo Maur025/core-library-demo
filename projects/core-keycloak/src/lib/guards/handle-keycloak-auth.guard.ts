@@ -1,3 +1,4 @@
+import { Injectable } from '@angular/core'
 import {
 	ActivatedRouteSnapshot,
 	Router,
@@ -5,7 +6,7 @@ import {
 	UrlTree,
 } from '@angular/router'
 import { KeycloakAuthGuard, KeycloakService } from 'keycloak-angular'
-
+@Injectable()
 export class HandleKeycloakAuthGuard extends KeycloakAuthGuard {
 	constructor(
 		protected override router: Router,
