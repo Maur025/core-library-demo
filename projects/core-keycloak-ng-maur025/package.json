@@ -1,6 +1,6 @@
 {
 	"name": "core-keycloak-ng-maur025",
-	"version": "0.0.1-alpha.1",
+	"version": "0.0.1-alpha.2",
 	"peerDependencies": {
 		"@angular/common": "^15.1.2",
 		"@angular/core": "^15.1.2",

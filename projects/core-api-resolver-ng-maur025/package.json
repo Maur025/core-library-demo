@@ -1,6 +1,6 @@
 {
 	"name": "core-api-resolver-ng-maur025",
-	"version": "0.0.1",
+	"version": "0.0.2-alpha.0",
 	"peerDependencies": {
 		"@angular/common": "^15.1.2",
 		"@angular/core": "^15.1.2"
