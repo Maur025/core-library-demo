@@ -5,21 +5,21 @@
 	"projects": {
 		"core-models-ng-maur025": {
 			"projectType": "library",
-			"root": "projects/core-models",
-			"sourceRoot": "projects/core-models/src",
+			"root": "projects/core-models-ng-maur025",
+			"sourceRoot": "projects/core-models-ng-maur025/src",
 			"prefix": "lib",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
 					"options": {
-						"project": "projects/core-models/ng-package.json"
+						"project": "projects/core-models-ng-maur025/ng-package.json"
 					},
 					"configurations": {
 						"production": {
-							"tsConfig": "projects/core-models/tsconfig.lib.prod.json"
+							"tsConfig": "projects/core-models-ng-maur025/tsconfig.lib.prod.json"
 						},
 						"development": {
-							"tsConfig": "projects/core-models/tsconfig.lib.json"
+							"tsConfig": "projects/core-models-ng-maur025/tsconfig.lib.json"
 						}
 					},
 					"defaultConfiguration": "production"
@@ -27,29 +27,29 @@
 				"test": {
 					"builder": "@angular-devkit/build-angular:karma",
 					"options": {
-						"tsConfig": "projects/core-models/tsconfig.spec.json",
+						"tsConfig": "projects/core-models-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
 					}
 				}
 			}
 		},
-		"core-api": {
+		"core-api-ng-maur025": {
 			"projectType": "library",
-			"root": "projects/core-api",
-			"sourceRoot": "projects/core-api/src",
+			"root": "projects/core-api-ng-maur025",
+			"sourceRoot": "projects/core-api-ng-maur025/src",
 			"prefix": "lib",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
 					"options": {
-						"project": "projects/core-api/ng-package.json"
+						"project": "projects/core-api-ng-maur025/ng-package.json"
 					},
 					"configurations": {
 						"production": {
-							"tsConfig": "projects/core-api/tsconfig.lib.prod.json"
+							"tsConfig": "projects/core-api-ng-maur025/tsconfig.lib.prod.json"
 						},
 						"development": {
-							"tsConfig": "projects/core-api/tsconfig.lib.json"
+							"tsConfig": "projects/core-api-ng-maur025/tsconfig.lib.json"
 						}
 					},
 					"defaultConfiguration": "production"
@@ -57,7 +57,7 @@
 				"test": {
 					"builder": "@angular-devkit/build-angular:karma",
 					"options": {
-						"tsConfig": "projects/core-api/tsconfig.spec.json",
+						"tsConfig": "projects/core-api-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
 					}
 				}
@@ -65,21 +65,21 @@
 		},
 		"core-keycloak-ng-maur025": {
 			"projectType": "library",
-			"root": "projects/core-keycloak",
-			"sourceRoot": "projects/core-keycloak/src",
+			"root": "projects/core-keycloak-ng-maur025",
+			"sourceRoot": "projects/core-keycloak-ng-maur025/src",
 			"prefix": "lib",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
 					"options": {
-						"project": "projects/core-keycloak/ng-package.json"
+						"project": "projects/core-keycloak-ng-maur025/ng-package.json"
 					},
 					"configurations": {
 						"production": {
-							"tsConfig": "projects/core-keycloak/tsconfig.lib.prod.json"
+							"tsConfig": "projects/core-keycloak-ng-maur025/tsconfig.lib.prod.json"
 						},
 						"development": {
-							"tsConfig": "projects/core-keycloak/tsconfig.lib.json"
+							"tsConfig": "projects/core-keycloak-ng-maur025/tsconfig.lib.json"
 						}
 					},
 					"defaultConfiguration": "production"
@@ -87,29 +87,29 @@
 				"test": {
 					"builder": "@angular-devkit/build-angular:karma",
 					"options": {
-						"tsConfig": "projects/core-keycloak/tsconfig.spec.json",
+						"tsConfig": "projects/core-keycloak-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
 					}
 				}
 			}
 		},
-		"core-api-resolver": {
+		"core-api-resolver-ng-maur025": {
 			"projectType": "library",
-			"root": "projects/core-api-resolver",
-			"sourceRoot": "projects/core-api-resolver/src",
+			"root": "projects/core-api-resolver-ng-maur025",
+			"sourceRoot": "projects/core-api-resolver-ng-maur025/src",
 			"prefix": "lib",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",
 					"options": {
-						"project": "projects/core-api-resolver/ng-package.json"
+						"project": "projects/core-api-resolver-ng-maur025/ng-package.json"
 					},
 					"configurations": {
 						"production": {
-							"tsConfig": "projects/core-api-resolver/tsconfig.lib.prod.json"
+							"tsConfig": "projects/core-api-resolver-ng-maur025/tsconfig.lib.prod.json"
 						},
 						"development": {
-							"tsConfig": "projects/core-api-resolver/tsconfig.lib.json"
+							"tsConfig": "projects/core-api-resolver-ng-maur025/tsconfig.lib.json"
 						}
 					},
 					"defaultConfiguration": "production"
@@ -117,7 +117,7 @@
 				"test": {
 					"builder": "@angular-devkit/build-angular:karma",
 					"options": {
-						"tsConfig": "projects/core-api-resolver/tsconfig.spec.json",
+						"tsConfig": "projects/core-api-resolver-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
 					}
 				}
