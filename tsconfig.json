@@ -3,10 +3,10 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"paths": {
-			"core-api": ["dist/core-api"],
-			"core-api-resolver": ["dist/core-api-resolver"],
-			"core-keycloak-ng-maur025": ["dist/core-keycloak"],
-			"core-models-ng-maur025": ["dist/core-models"]
+			"core-api-ng-maur025": ["dist/core-api-ng-maur025"],
+			"core-api-resolver-ng-maur025": ["dist/core-api-resolver-ng-maur025"],
+			"core-keycloak-ng-maur025": ["dist/core-keycloak-ng-maur025"],
+			"core-models-ng-maur025": ["dist/core-models-ng-maur025"]
 		},
 		"baseUrl": "./",
 		"outDir": "./dist/out-tsc",
