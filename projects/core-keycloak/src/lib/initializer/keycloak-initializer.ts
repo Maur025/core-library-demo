@@ -1,12 +1,14 @@
 import { KeycloakOptions, KeycloakService } from 'keycloak-angular'
+import { KeycloakConfig } from 'keycloak-js'
 
-export const initializer = (
-	keycloakService: KeycloakService
+export const keycloakInitializer = (
+	keycloakService: KeycloakService,
+	config: KeycloakConfig
 ): (() => Promise<boolean>) => {
 	const keycloakOptions: KeycloakOptions = {
-		config: {},
+		config: config,
 		loadUserProfileAtStartUp: true,
-		initOptions: { onload: 'check-sso', checkLoginIframe: false },
+		initOptions: { onLoad: 'check-sso', checkLoginIframe: false },
 		bearerExcludedUrls: [],
 	}
 
