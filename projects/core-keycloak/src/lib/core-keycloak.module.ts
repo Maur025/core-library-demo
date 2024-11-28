@@ -12,9 +12,9 @@ import { KeycloakConfig } from 'keycloak-js'
 	exports: [],
 })
 export class CoreKeycloakModule {
-	static readonly forRoot = (config: {
+	static forRoot(config: {
 		keycloakConfig: KeycloakConfig
-	}): ModuleWithProviders<CoreKeycloakModule> => {
+	}): ModuleWithProviders<CoreKeycloakModule> {
 		return {
 			ngModule: CoreKeycloakModule,
 			providers: [
