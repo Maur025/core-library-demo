@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core'
-import { AuthUser, User } from 'core-models'
+import { AuthUser, User } from 'core-models-ng-maur025'
 import { KeycloakService } from 'keycloak-angular'
 import { KeycloakTokenParsed } from 'keycloak-js'
 import { BehaviorSubject, Observable } from 'rxjs'

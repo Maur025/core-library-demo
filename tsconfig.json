@@ -5,8 +5,8 @@
 		"paths": {
 			"core-api": ["dist/core-api"],
 			"core-api-resolver": ["dist/core-api-resolver"],
-			"core-keycloak": ["dist/core-keycloak"],
-			"core-models": ["dist/core-models"]
+			"core-keycloak-ng-maur025": ["dist/core-keycloak"],
+			"core-models-ng-maur025": ["dist/core-models"]
 		},
 		"baseUrl": "./",
 		"outDir": "./dist/out-tsc",

@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"core-models": {
+		"core-models-ng-maur025": {
 			"projectType": "library",
 			"root": "projects/core-models",
 			"sourceRoot": "projects/core-models/src",
@@ -63,7 +63,7 @@
 				}
 			}
 		},
-		"core-keycloak": {
+		"core-keycloak-ng-maur025": {
 			"projectType": "library",
 			"root": "projects/core-keycloak",
 			"sourceRoot": "projects/core-keycloak/src",
