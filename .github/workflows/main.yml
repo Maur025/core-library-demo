@@ -31,8 +31,17 @@ jobs:
         run: |
           yarn lint || exit 1
 
-      - name: Build library
-        run: yarn build
+      - name: Build core API
+        run: yarn build-core-api
+
+      - name: Build core API resolver
+        run: yarn build-core-api-resolver
+
+      - name: Build core Keycloak
+        run: yarn build-core-keycloak
+
+      - name: Build core Models
+        run: yarn build-core-models
 
       - name: Run tests
         run: yarn test
