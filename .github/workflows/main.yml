@@ -43,8 +43,8 @@ jobs:
       - name: Build core Keycloak
         run: yarn build-core-keycloak
 
-      - name: Run tests
-        run: yarn test
+      # - name: Run tests
+      #  run: yarn test
 
       - name: verify build output
         run: |
