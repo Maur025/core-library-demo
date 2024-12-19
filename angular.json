@@ -30,6 +30,16 @@
 						"tsConfig": "projects/core-models-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
 					}
+				},
+				"lint": {
+					"builder": "@angular-eslint/builder:lint",
+					"options": {
+						"eslintConfig": ".eslintrc.json",
+						"lintFilePatterns": [
+							"projects/core-models-ng-maur025/src/**/*.ts",
+							"projects/core-models-ng-maur025/src/**/*.html"
+						]
+					}
 				}
 			}
 		},
@@ -59,6 +69,16 @@
 					"options": {
 						"tsConfig": "projects/core-api-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
+					}
+				},
+				"lint": {
+					"builder": "@angular-eslint/builder:lint",
+					"options": {
+						"eslintConfig": ".eslintrc.json",
+						"lintFilePatterns": [
+							"projects/core-api-ng-maur025/src/**/*.ts",
+							"projects/core-api-ng-maur025/src/**/*.html"
+						]
 					}
 				}
 			}
@@ -90,6 +110,16 @@
 						"tsConfig": "projects/core-keycloak-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
 					}
+				},
+				"lint": {
+					"builder": "@angular-eslint/builder:lint",
+					"options": {
+						"eslintConfig": ".eslintrc.json",
+						"lintFilePatterns": [
+							"projects/core-keycloak-ng-maur025/src/**/*.ts",
+							"projects/core-keycloak-ng-maur025/src/**/*.html"
+						]
+					}
 				}
 			}
 		},
@@ -119,6 +149,16 @@
 					"options": {
 						"tsConfig": "projects/core-api-resolver-ng-maur025/tsconfig.spec.json",
 						"polyfills": ["zone.js", "zone.js/testing"]
+					}
+				},
+				"lint": {
+					"builder": "@angular-eslint/builder:lint",
+					"options": {
+						"eslintConfig": ".eslintrc.json",
+						"lintFilePatterns": [
+							"projects/core-api-resolver-ng-maur025/src/**/*.ts",
+							"projects/core-api-resolver-ng-maur025/src/**/*.html"
+						]
 					}
 				}
 			}

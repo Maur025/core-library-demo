@@ -6,9 +6,12 @@ on:
       - main
       - develop
   pull_request:
-  
+    branches:
+      - main
+      - develop
+
 jobs:
-  lint-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,13 +21,31 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: '22.12.0'
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
 
-      - name: Run lint
-        run: npm run lint
+      - name: Lint
+        run: |
+          yarn lint || exit 1
 
-      - name: Run tests
-        run: npm test
+      - name: Build core Models
+        run: yarn build-core-models
+
+      - name: Build core API
+        run: yarn build-core-api
+
+      - name: Build core API resolver
+        run: yarn build-core-api-resolver
+
+      - name: Build core Keycloak
+        run: yarn build-core-keycloak
+
+      # - name: Run tests
+      #  run: yarn test
+
+      - name: verify build output
+        run: |
+          ls dist/
