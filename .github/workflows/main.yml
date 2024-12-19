@@ -31,6 +31,9 @@ jobs:
         run: |
           yarn lint || exit 1
 
+      - name: Build core Models
+        run: yarn build-core-models
+
       - name: Build core API
         run: yarn build-core-api
 
@@ -39,9 +42,6 @@ jobs:
 
       - name: Build core Keycloak
         run: yarn build-core-keycloak
-
-      - name: Build core Models
-        run: yarn build-core-models
 
       - name: Run tests
         run: yarn test
