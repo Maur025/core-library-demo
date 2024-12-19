@@ -9,9 +9,9 @@
 		"test": "ng test",
 		"lint": "ng lint",
 		"build-core-api": "ng build core-api-ng-maur025",
-		"build-core-api-resolver": "core-api-resolver-ng-maur025",
-		"build-core-keycloak": "core-keycloak-ng-maur025",
-		"build-core-models": "core-models-ng-maur025"
+		"build-core-api-resolver": "ng build core-api-resolver-ng-maur025",
+		"build-core-keycloak": "ng build core-keycloak-ng-maur025",
+		"build-core-models": "ng build core-models-ng-maur025"
 	},
 	"private": true,
 	"dependencies": {
